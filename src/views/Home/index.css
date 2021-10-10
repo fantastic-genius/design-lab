@@ -1,0 +1,41 @@
+.home-content .history-action {
+  width: 6.4rem;
+  height: 12.8rem;
+  background: var(--main-white-color);
+  border-radius: 0.8rem;
+  font-size: 1.3rem;
+}
+
+.home-content .part-container {
+  width: 12rem;
+  height: 40rem;
+  border-radius: 1.2rem;
+  background: var(--main-white-color);
+}
+
+.home-content .part-item {
+  width: 12rem;
+  height: 10rem;
+}
+
+.home-content .part-item-active {
+  border-radius: 1.2rem;
+  border: solid 1px var(--main-primary-color);
+}
+
+.home-content .zoom-con {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 0.6rem;
+  background: var(--main-white-color);
+}
+
+.home-content .shirt-con {
+  width: 560px;
+  height: calc(100vh - 140px);
+}
+
+.home-content .shirt-img {
+  width: auto;
+  height: calc(100vh - 140px);
+}

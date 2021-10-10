@@ -1,0 +1,50 @@
+.footer {
+  padding: 0.6rem 4rem;
+  background: var(--main-white-color);
+}
+
+
+.footer .dl-bg-primary-light.btn-secondary:focus, 
+.footer .dl-bg-primary-light.btn-secondary:hover {
+  color: #007BFF;
+  background-color: #E5F1FF;
+  border-color: #E5F1FF;
+}
+
+.footer .dl-bg-primary-light.btn-secondary:focus, 
+.footer .dl-bg-primary-light.btn-secondary:hover {
+  color: #007BFF;
+  background-color: #E5F1FF;
+  border-color: #E5F1FF;
+}
+
+
+.footer .dl-bg-primary.btn-secondary:focus, 
+.footer .dl-bg-primary.btn-secondary:hover {
+  color: #ffffff;
+  background-color: #007BFF;
+  border-color: #007BFF;
+}
+
+.footer .dl-btn-outline.btn-secondary:focus, 
+.footer .dl-btn-outline.btn-secondary:hover {
+  color: #007BFF;
+  background-color: #FFFFFF;
+  border-color: #007BFF;
+}
+
+
+.footer .small-shirt {
+  width: 5.6rem;
+  height: 6.4rem;
+  border-radius: 0.4rem;
+  border-bottom: solid #007BFF 0.4rem;
+  background-color: #D9E2EC;
+  margin-left: 2rem;
+}
+
+.footer .vt-line{
+  height: 60px;
+  width: 1px;
+  background-color: #102A43;
+}

@@ -1,0 +1,18 @@
+.quickaction-component {
+  background: var(--main-white-color);
+  overflow-y: scroll;
+  left: 0;
+  max-height: calc(100vh - 140px);
+  width: 36rem;
+  padding: 4.8rem 4rem;
+}
+
+.quickaction-component .action-con {
+  margin-bottom: 5rem;
+}
+
+.quickaction-component .icon-con {
+ height: 6.5rem;
+ width: 8.4rem;
+ margin: auto;
+}

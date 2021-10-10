@@ -1,0 +1,63 @@
+.addtext-component {
+  background: var(--main-white-color);
+  overflow-y: scroll;
+  left: 0;
+  max-height: calc(100vh - 140px);
+  width: 36rem;
+  padding: 1rem 0rem;
+}
+
+.addtext-component .dl-btn {
+  border-radius: 0.4rem;
+}
+
+.addtext-component .dl-btn:focus, 
+.addtext-component .dl-btn:hover {
+  color: #ffffff !important;
+  background-color: #007BFF;
+}
+
+.addtext-component .ant-form input {
+  border-radius: 0.4rem;
+  height: auto;
+  border: 1px solid #829AB1;
+}
+
+.addtext-component .ant-input:focus{
+  box-shadow: unset;
+}
+
+.addtext-component .font-container {
+  border-bottom: solid 1px #BCCCDC;
+}
+
+.addtext-component .ant-select {
+  position: relative;
+  bottom: -1rem;
+  text-align: right;
+}
+
+.addtext-component .ant-select:not(.ant-select-customize-input) .ant-select-selector,
+.addtext-component .ant-select-focused:focus,
+.addtext-component .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector{
+  border: 0;
+  outline: 0;
+  box-shadow: unset;
+}
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector .ant-select-selection-search-input {
+ text-align: right;
+}
+
+.addtext-component .ant-select-single.ant-select-show-arrow .ant-select-selection-item, .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder {
+  color: var(--gray-900);
+}
+
+.addtext-component .ant-select-single.ant-select-show-arrow .ant-select-selection-item {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.addtext-component .ant-select-arrow {
+  color: var(--gray-500);
+}

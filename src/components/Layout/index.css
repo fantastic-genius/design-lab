@@ -1,0 +1,10 @@
+.layout-container{
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.layout-container .content{
+  background-color: #F0F4F8;
+  max-height: calc(100vh - 140px);
+}
+ 

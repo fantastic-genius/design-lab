@@ -1,0 +1,70 @@
+.sidebar-component{
+  background: var(--main-primary-color);
+  overflow-y: scroll;
+  height: 100%;
+  max-height: calc(100vh - 140px);
+  width: 10rem !important;
+  max-width: 10rem !important;
+  flex: 0 0 10rem !important;
+  min-width: 10rem !important;
+  padding: 2rem 0rem;
+}
+
+.sidebar-component .ant-menu-item {
+  padding-left: 0rem !important;
+  padding-right: 0rem !important;
+}
+.sidebar-component .ant-menu { 
+  background: var(--main-primary-color);
+}
+
+.ant-menu-inline > .ant-menu-item{
+  height:  10rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--main-white-color);
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
+
+.sidebar-component .ant-menu-inline {
+  border-right: 0px;
+}
+
+.sidebar-component .ant-menu-light .ant-menu-item:hover, 
+.sidebar-component .ant-menu-light .ant-menu-item-active, 
+.sidebar-component .ant-menu-light .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open, 
+.sidebar-component .ant-menu-light .ant-menu-submenu-active, 
+.sidebar-component .ant-menu-light .ant-menu-submenu-title:hover {
+  color: var(--main-white-color);
+}
+
+.sidebar-component .ant-menu-item-selected,
+.sidebar-component .ant-menu-item-selected:hover {
+  color: var(--main-primary-color) !important;
+  border-left: solid 0.2rem var(--main-primary-color) !important;
+  background: var(--main-white-color) !important;
+}
+
+.sidebar-component .ant-menu-vertical .ant-menu-item::after, 
+.sidebar-component .ant-menu-vertical-left .ant-menu-item::after,
+.sidebar-component .ant-menu-vertical-right .ant-menu-item::after, 
+.sidebar-component .ant-menu-inline .ant-menu-item::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: unset;
+  bottom: 0;
+  border-right: 2px solid var(--main-primary-color);
+}
+
+.sidebar-component .ant-menu-vertical .ant-menu-item:not(:last-child), 
+.sidebar-component .ant-menu-vertical-left .ant-menu-item:not(:last-child), 
+.sidebar-component .ant-menu-vertical-right .ant-menu-item:not(:last-child), 
+.sidebar-component .ant-menu-inline .ant-menu-item:not(:last-child) {
+  margin-bottom: 0px;
+}
+
+.sidebar-component .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: var(--main-primary-color);
+}

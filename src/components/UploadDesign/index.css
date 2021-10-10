@@ -1,0 +1,30 @@
+.uploaddesign-component {
+  background: var(--main-white-color);
+  overflow-y: scroll;
+  left: 0;
+  max-height: calc(100vh - 140px);
+  width: 36rem;
+}
+
+.uploaddesign-component .ant-upload.ant-upload-drag {
+  border-color: #007BFF;
+  border-radius: 0.4rem;
+}
+
+.uploaddesign-component .ant-upload-drag-icon {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 2.4rem;
+  background: #E5F1FF;
+}
+
+.uploaddesign-component .dragger-con {
+  padding: 2.8rem 7.2rem;
+}
+
+.uploaddesign-component .mimetype {
+  height: 1.6rem;
+  width: 3.4rem;
+  background: #F0F4F8;
+  border-radius: 0.4rem;
+}
