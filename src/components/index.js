@@ -5,7 +5,8 @@ import Footer from './Footer';
 import AddText from './AddText';
 import QuickAction from './QuickAction';
 import UploadDesign from './UploadDesign';
+import FontSection from './FontSection';
 
 export {
-  AppLayout, NavBar, SideBar, Footer, AddText, QuickAction, UploadDesign,
+  AppLayout, NavBar, SideBar, Footer, AddText, QuickAction, UploadDesign, FontSection,
 };
