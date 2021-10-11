@@ -56,7 +56,7 @@ const SideBar = ({ setSelectedMenu, selectedMenu }) => {
         <Menu.Item key={key} >
           <div className='text-center'>
             <div>
-                <Icon fill={selectedMenu === key ? '#007BFF' : 'white' } />
+                <Icon fill={selectedMenu === key || (key === 'text' && selectedMenu === 'font') ? '#007BFF' : 'white' } />
             </div>
             <p className='ml-2 px-3 dl-mt-12 text-wrap text-center'>{title}</p>
           </div>
@@ -76,7 +76,7 @@ const SideBar = ({ setSelectedMenu, selectedMenu }) => {
       breakpoint='md'
       collapsedWidth='0'
     >
-      <Menu mode='inline' selectedKeys={[selectedMenu]} onSelect={({ key }) => onSelect(key)}>
+      <Menu mode='inline' selectedKeys={[selectedMenu === 'font' ? 'text' : selectedMenu]} onSelect={({ key }) => onSelect(key)}>
         {createMenus()}
       </Menu>
     </Sider>

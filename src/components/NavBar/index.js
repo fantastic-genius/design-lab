@@ -31,7 +31,7 @@ const NavBar = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className='ml-auto dl-font-weight-500 dl-text-semi-small w-100' navbar>
             <NavItem className='menu-item dl-text-gray-700'>
-              <NavLink href='#'>Design Lab</NavLink>
+              <NavLink href='#' className='active-menu'>Design Lab</NavLink>
             </NavItem>
             <NavItem className='menu-item dl-text-gray-700'>
               <NavLink href='/investments'>Products</NavLink>

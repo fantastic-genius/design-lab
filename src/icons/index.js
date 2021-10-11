@@ -27,10 +27,14 @@ import { ReactComponent as RightSleeve } from '../svg/RightSleeve.svg';
 import { ReactComponent as LeftSleeve } from '../svg/LeftSleeve.svg';
 import { ReactComponent as ZoomOut } from '../svg/ZoomOut.svg';
 import { ReactComponent as ZoomIn } from '../svg/ZoomIn.svg';
+import { ReactComponent as BackArrow } from '../svg/BackArrow.svg';
+import { ReactComponent as Search } from '../svg/Search.svg';
+import { ReactComponent as Clock } from '../svg/Clock.svg';
 
 export {
   Person, Chat, Abc, CaretDown, PlusCircle, Share, Save, Dollar,
   Text, TextActive, TeamNames, Art, Color, Upload, UploadActive, Notes,
   CloseOutline, UploadOutline, Shirts, Template, UploadCloud, Undo, Redo,
-  ShirtFront, ShirtBack, RightSleeve, LeftSleeve, ZoomOut, ZoomIn,
+  ShirtFront, ShirtBack, RightSleeve, LeftSleeve, ZoomOut, ZoomIn, BackArrow,
+  Search, Clock,
 };

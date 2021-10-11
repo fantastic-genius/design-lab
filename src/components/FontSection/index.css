@@ -1,0 +1,32 @@
+.fontsection-component {
+  background: var(--main-white-color);
+  /* overflow-y: scroll; */
+  left: 0;
+  max-height: calc(100vh - 140px);
+  width: 36rem;
+  padding: 1rem 0rem;
+}
+
+.fontsection-component .top-con {
+  margin-bottom: 2.7rem;
+}
+
+.fontsection-component .ant-form input {
+  border-radius: 0.4rem;
+  height: auto;
+  border: 1px solid #829AB1;
+}
+
+.fontsection-component .ant-input:focus {
+  box-shadow: unset;
+}
+
+.fontsection-component .font-container {
+  height: 6.5rem;
+  border-bottom: solid 1px #D9E2EC;
+}
+
+.fontsection-component .font-list {
+ max-height: calc(100vh - 260px);
+ overflow-y: scroll;
+}

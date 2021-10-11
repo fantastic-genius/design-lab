@@ -1,12 +1,22 @@
 import './index.css';
-import React from 'react';
-import { Upload, message } from 'antd';
+import React, { useCallback } from 'react';
+import { Upload } from 'antd';
 
 //icons
 import { CloseOutline, UploadCloud } from '../../icons';
 
-const UploadDesign = ({ closeMenu=() => {} }) => {
+const UploadDesign = ({ closeMenu=() => {}, handleAddImage=()=> {} }) => {
   const { Dragger } = Upload;
+  const acceptedFileTypes = ['.png', '.jpg', '.jpeg'];
+
+  const loadAcceptedFileTypes = useCallback(() => {
+    const types = acceptedFileTypes.map((type, i) => (
+      <div key={i} className='text-uppercase text-center d-flex align-items-center dl-text-small dl-text-gray-800 mimetype dl-ml-8 dl-mb-8'>
+        {type}
+      </div>
+    ))
+    return types;
+  }, [acceptedFileTypes])
 
   return (
     <div className='uploaddesign-component dl-pt-10 dl-pr-18 dl-pl-18'>
@@ -20,22 +30,24 @@ const UploadDesign = ({ closeMenu=() => {} }) => {
         <h4 className='dl-text-semi-small dl-font-weight-500 dl-text-gray-900'>Choose file to upload</h4>
         <Dragger 
           name='file'
-          action= 'https://www.mocky.io/v2/5cc8019d300000980a055e76'
-          onChange={(info) => {
-            const { status } = info.file;
-            if (status !== 'uploading') {
-              console.log(info.file, info.fileList);
+          customRequest={async ({ file, onSuccess }) => {
+            const src = await new Promise(resolve => {
+              const reader = new FileReader();
+              reader.readAsDataURL(file);
+              reader.onload = () => resolve(reader.result);
+            });
+            const image = new Image();
+            image.src = src;
+            image.onload = () => {
+              const height = image.height;
+              const width = image.width;
+              handleAddImage(src, height, width)
             }
-            if (status === 'done') {
-              message.success(`${info.file.name} file uploaded successfully.`);
-            } else if (status === 'error') {
-              message.error(`${info.file.name} file upload failed.`);
-            }
-          }}
-          onDrop={(e) => {
-            console.log('Dropped files', e.dataTransfer.files);
+            onSuccess('ok');
           }}
           className='dragger-con'
+          maxCount={1}
+          accept='.png,.jpg,.jpeg,'
         >
           <div className="mx-auto ant-upload-drag-icon d-flex justify-content-center align-items-center dl-mb-16">
             <UploadCloud />
@@ -47,7 +59,7 @@ const UploadDesign = ({ closeMenu=() => {} }) => {
         <div className='dl-mt-16 dl-mb-16'>
           <h4 className='dl-text-semi-small dl-font-weight-500 dl-text-gray-900 dl-mb-12'>Accepted file types</h4>
           <div className='d-flex flex-wrap align-items-center'>
-            <div className='text-uppercase text-center d-flex align-items-center dl-text-small dl-text-gray-800 mimetype dl-ml-8 dl-mb-8'>.PNG</div>
+            {loadAcceptedFileTypes()}
           </div>
         </div>
         <p className='dl-text-semi-small dl-text-gray-600 mb-4'>
