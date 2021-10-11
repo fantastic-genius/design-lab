@@ -132,6 +132,7 @@ const Home = () => {
             closeMenu={onCloseMenu}
             handleAddFont={handleAddFont}
             onGoBack={onGoBackToText}
+            selectedText={selectedTextItem?.text || ''}
           />
         );
       default:
@@ -147,7 +148,8 @@ const Home = () => {
     onGoToFont,
     currentFont,
     selectedTextItem,
-    isTextEditEnabled
+    isTextEditEnabled,
+    handleEditText
   ]); 
 
   const ShirtImage = ({ src }) => {

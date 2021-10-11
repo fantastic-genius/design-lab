@@ -9,7 +9,8 @@ import { CloseOutline, BackArrow, Search, Clock } from '../../icons';
 const AddText = ({
   closeMenu,
   handleAddFont,
-  onGoBack
+  onGoBack,
+  selectedText
 }) => {
   const [fonts, setFonts] = useState(googleFonts);
 
@@ -30,7 +31,7 @@ const AddText = ({
   const loadFonts = useCallback(() => {
     const items = fonts.map(font => (
       <div className='text-center font-container dl-pointer' onClick={() => onSelectFont(font)}>
-        <p className='dl-text-gray-900 dl-text-xlarge dl-font-weight-600' style={{ fontFamily: font }}>Design Text</p>
+        <p className='dl-text-gray-900 dl-text-xlarge dl-font-weight-600' style={{ fontFamily: font }}>{selectedText || 'Design Text'}</p>
         <p className='dl-text-gray-500 dl-text-semi-small dl-font-weight-400'>{font}</p>
       </div>
     ))
