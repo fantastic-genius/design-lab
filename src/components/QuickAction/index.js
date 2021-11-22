@@ -11,7 +11,7 @@ const QuickAction = ({ setSelectedMenu }) => {
       <h4 className='dl-font-weight-500 dl-text-gray-900 text-center mb-5'>What’s next for you?</h4>
       <div>
         <div className='row action-con'>
-          <div className='col text-center'>
+          <div className='col text-center' data-testid='addtext-quickaction'>
             <div className='icon-con dl-pointer' onClick={() => setSelectedMenu('text')}>
               <Abc />
             </div>

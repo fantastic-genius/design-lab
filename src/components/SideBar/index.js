@@ -53,7 +53,7 @@ const SideBar = ({ setSelectedMenu, selectedMenu }) => {
       const { key, title, icon:Icon } = menu;
 
       return (
-        <Menu.Item key={key} >
+        <Menu.Item key={key} data-testid='side-menu' >
           <div className='text-center'>
             <div>
                 <Icon fill={selectedMenu === key || (key === 'text' && selectedMenu === 'font') ? '#007BFF' : 'white' } />

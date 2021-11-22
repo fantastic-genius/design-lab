@@ -64,8 +64,11 @@ const AddText = ({
             className='w-100'
           >
             <Input
+              data-testid='addtext-input'
               className='dl-pt-16 dl-pb-16 dl-pl-8 dl-pr-8 dl-text-gray-500'
-              readOnly={editMode}
+              onChange={(e) => {
+                if(editMode && selectedText) handleEditText(selectedText, e.target.value)
+              }}
             />
           </Form.Item>
           {!editMode ? (
