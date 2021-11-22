@@ -1,0 +1,254 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout renders properly 1`] = `
+<div>
+  <section
+    class="ant-layout layout-container w-100"
+  >
+    <div>
+      <nav
+        class="nav-con navbar navbar-expand-md navbar-light"
+      >
+        <a
+          class="brand-name navbar-brand"
+          data-testid="top-logo"
+          href="/"
+        >
+          <img
+            alt="SameDay Custom"
+            src="Logo.svg"
+          />
+        </a>
+        <button
+          aria-label="Toggle navigation"
+          class="navbar-toggler"
+          type="button"
+        >
+          <span
+            class="navbar-toggler-icon"
+          />
+        </button>
+        <div
+          class="collapse navbar-collapse"
+        >
+          <ul
+            class="ml-auto dl-font-weight-500 dl-text-semi-small w-100 navbar-nav"
+          >
+            <li
+              class="menu-item dl-text-gray-700 nav-item"
+              data-testid="top-lmenu"
+            >
+              <a
+                class="active-menu nav-link"
+                href="#"
+              >
+                Design Lab
+              </a>
+            </li>
+            <li
+              class="menu-item dl-text-gray-700 nav-item"
+              data-testid="top-lmenu"
+            >
+              <a
+                class="nav-link"
+                href="/investments"
+              >
+                Products
+              </a>
+            </li>
+            <li
+              class="menu-item dl-text-gray-700 nav-item"
+              data-testid="top-lmenu"
+            >
+              <a
+                class="nav-link"
+                href="#"
+              >
+                How it works
+              </a>
+            </li>
+            <li
+              class="menu-item dl-text-gray-700 me-auto nav-item"
+              data-testid="top-lmenu"
+            >
+              <a
+                class="nav-link"
+                href="#"
+              >
+                Bulk pricing
+              </a>
+            </li>
+            <li
+              class="nav-item"
+              data-testid="top-rmenu"
+            >
+              <a
+                class="get-help-btn nav-btn nav-link"
+                href="#"
+              >
+                <svg
+                  class="me-2"
+                >
+                  Chat.svg
+                </svg>
+                Get help
+                <svg
+                  class="ms-2"
+                >
+                  CaretDown.svg
+                </svg>
+              </a>
+            </li>
+            <li
+              class="nav-item"
+              data-testid="top-rmenu"
+            >
+              <a
+                class="your-acct-btn nav-btn nav-link"
+                href="#"
+              >
+                <svg
+                  class="me-2"
+                >
+                  Person.svg
+                </svg>
+                 Your Account 
+                <svg
+                  class="ms-2"
+                >
+                  CaretDown.svg
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <section
+      class="ant-layout"
+    >
+      <main
+        class="ant-layout-content content"
+      />
+    </section>
+    <div
+      class="position-fixed bottom-0 start-0 w-100 footer d-flex flex-row align-items-center justify-content-between dl-text-semi-small"
+    >
+      <div
+        class="d-flex flex-row align-items-center"
+      >
+        <button
+          class="dl-bg-primary-light dl-border-primary-light dl-btn border-1 dl-text-primary btn btn-secondary"
+        >
+          <svg>
+            PlusCircle.svg
+          </svg>
+          <span
+            class="ms-2 dl-text-semi-small"
+          >
+            Add Products
+          </span>
+        </button>
+        <div
+          class="small-shirt"
+        >
+          <img
+            alt="shirt"
+            height="64"
+            src="ShirtSmall.png"
+            width="56"
+          />
+        </div>
+        <div
+          class="vt-line dl-ml-16 dl-mr-16"
+        />
+        <div
+          class="d-flex flex-column justify-content-bewtween"
+        >
+          <div
+            class="d-flex flex-row align-items-end"
+          >
+            <p
+              class="dl-text-medium dl-font-weight-400 dl-text-gray-900 dl-mr-8"
+            >
+              Gildan Unisex T-shirt
+            </p>
+            <p
+              class="dl-text-semi-small dl-font-weight-500 dl-text-primary dl-pointer"
+            >
+              Change Product
+            </p>
+          </div>
+          <div
+            class="d-flex flex-row align-items-end mt-3"
+          >
+            <label
+              class="ant-radio-wrapper"
+            >
+              <span
+                class="ant-radio"
+              >
+                <input
+                  class="ant-radio-input"
+                  type="radio"
+                  value=""
+                />
+                <span
+                  class="ant-radio-inner"
+                />
+              </span>
+              <span>
+                <p
+                  class="dl-text-semi-small dl-font-weight-400 dl-text-gray-900 dl-mr-8"
+                >
+                  White
+                </p>
+              </span>
+            </label>
+            <p
+              class="dl-text-semi-small dl-font-weight-500 dl-text-primary dl-pointer"
+            >
+              Change Color
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="d-flex flex-row align-items-center"
+      >
+        <button
+          class="dl-btn dl-btn-outline dl-border-primary dl-text-primary dl-bg-white dl-mr-12 btn btn-secondary"
+        >
+          <svg>
+            Share.svg
+          </svg>
+        </button>
+        <button
+          class="dl-bg-primary-light dl-border-primary-light dl-btn border-1 dl-text-primary dl-mr-12 d-flex flex-row align-items-center btn btn-secondary"
+        >
+          <svg>
+            Save.svg
+          </svg>
+          <span
+            class="ms-2 dl-text-semi-small"
+          >
+            Save
+          </span>
+        </button>
+        <button
+          class="dl-bg-primary dl-border-primary dl-btn border-1 dl-text-primary d-flex flex-row align-items-center btn btn-secondary"
+        >
+          <svg>
+            Dollar.svg
+          </svg>
+          <span
+            class="ms-2 dl-text-white dl-text-semi-small"
+          >
+            Get Pricing
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+`;

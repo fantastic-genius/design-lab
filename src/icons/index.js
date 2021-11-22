@@ -30,11 +30,12 @@ import { ReactComponent as ZoomIn } from '../svg/ZoomIn.svg';
 import { ReactComponent as BackArrow } from '../svg/BackArrow.svg';
 import { ReactComponent as Search } from '../svg/Search.svg';
 import { ReactComponent as Clock } from '../svg/Clock.svg';
+import { ReactComponent as Close } from '../svg/Close.svg';
 
 export {
   Person, Chat, Abc, CaretDown, PlusCircle, Share, Save, Dollar,
   Text, TextActive, TeamNames, Art, Color, Upload, UploadActive, Notes,
   CloseOutline, UploadOutline, Shirts, Template, UploadCloud, Undo, Redo,
   ShirtFront, ShirtBack, RightSleeve, LeftSleeve, ZoomOut, ZoomIn, BackArrow,
-  Search, Clock,
+  Search, Clock, Close,
 };

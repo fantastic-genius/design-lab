@@ -36,7 +36,7 @@ const AddText = ({
       </div>
     ))
     return items;
-  }, [fonts, onSelectFont]);
+  }, [fonts, onSelectFont, selectedText]);
 
   return (
     <div className='fontsection-component'>
